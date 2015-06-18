@@ -1,4 +1,4 @@
-# brew-bundle.vim
+# Brewfile.vim
 
 [Brew Bundle](https://github.com/Homebrew/homebrew-bundle) syntax for Vim.
 
