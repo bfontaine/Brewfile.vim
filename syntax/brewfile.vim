@@ -12,4 +12,8 @@ endif
 source $VIMRUNTIME/syntax/ruby.vim
 unlet b:current_syntax
 
+syn keyword brewfileDirective brew cask tap
+
+hi def link brewfileDirective Keyword
+
 let b:current_syntax = "brewfile"
