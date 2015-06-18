@@ -1,8 +1,15 @@
 " Vim syntax file
-" Language: Brewfile
-" Maintainer: Baptiste Fontaine
+" Language:    Brewfile
+" Maintainer:  Baptiste Fontaine <b@ptistefontaine.fr>
+" URL:         https://github.com/bfontaine/Brewfile.vim
 " Last Change: 2015 Jun 18
 
-runtime! syntax/ruby.vim
+if exists("b:current_syntax")
+  finish
+endif
+
+" Load ruby syntax
+source $VIMRUNTIME/syntax/ruby.vim
+unlet b:current_syntax
 
 let b:current_syntax = "brewfile"
